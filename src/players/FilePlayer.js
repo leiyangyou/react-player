@@ -6,11 +6,11 @@ import { canPlay, AUDIO_EXTENSIONS, HLS_EXTENSIONS, DASH_EXTENSIONS, FLV_EXTENSI
 const HAS_NAVIGATOR = typeof navigator !== 'undefined'
 const IS_IPAD_PRO = HAS_NAVIGATOR && navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1
 const IS_IOS = HAS_NAVIGATOR && (/iPad|iPhone|iPod/.test(navigator.userAgent) || IS_IPAD_PRO) && !window.MSStream
-const HLS_SDK_URL = 'https://cdn.jsdelivr.net/npm/hls.js@VERSION/dist/hls.min.js'
+const HLS_SDK_URL = 'https://lib.baomitu.com/hls.js/VERSION/hls.js.min.js'
 const HLS_GLOBAL = 'Hls'
-const DASH_SDK_URL = 'https://cdnjs.cloudflare.com/ajax/libs/dashjs/VERSION/dash.all.min.js'
+const DASH_SDK_URL = 'https://lib.baomitu.com/dashjs/VERSION/dash.all.min.js'
 const DASH_GLOBAL = 'dashjs'
-const FLV_SDK_URL = 'https://cdn.jsdelivr.net/npm/flv.js@VERSION/dist/flv.min.js'
+const FLV_SDK_URL = 'https://lib.baomitu.com/flv.js/VERSION/flv.min.js'
 const FLV_GLOBAL = 'flvjs'
 const MATCH_DROPBOX_URL = /www\.dropbox\.com\/.+/
 const MATCH_CLOUDFLARE_STREAM = /https:\/\/watch\.cloudflarestream\.com\/([a-z0-9]+)/
